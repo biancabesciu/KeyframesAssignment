@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+@keyframes slideRightDown {
+  0% {
+    margin-left: 0;
+    margin-top: 0;
+    transform: rotate(0deg) scale(1, 1); }
+  25% {
+    margin-left: 318px;
+    margin-top: 125px;
+    transform: rotate(45deg) scale(1.5, 2); }
+  50% {
+    margin-left: 637px;
+    margin-top: 250px;
+    transform: rotate(90deg) scale(1.8, 2); }
+  100% {
+    margin-left: 1175px;
+    margin-top: 500px;
+    transform: rotate(180deg) scale(2, 2); } }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red; }
+
+.box {
+  /*The name of your defined animation (after @keyframes)*/
+  -webkit-animation-name: slideRightDown;
+  /*How long the animation will run*/
+  -webkit-animation-duration: 5s;
+  /*Which easing/timing function to use */
+  -webkit-animation-timing-function: linear;
+  /*How long to wait before starting the animation*/
+  -webkit-animation-delay: 2s;
+  /*how many times to run it (can be infinite)*/
+  -webkit-animation-iteration-count: infinite;
+  /*should animation play in reverse on alternate runs */
+  -webkit-animation-direction: alternate;
+  /*should the animation start of running or paused */
+  -webkit-animation-play-state: running; }

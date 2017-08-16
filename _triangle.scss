@@ -1,0 +1,38 @@
+@keyframes mymove {
+    0% {
+        margin-left: 100px;
+        margin-top: 0;
+
+    }
+
+    25% {
+        margin-left: 250px;
+        margin-top: -300px;
+    }
+
+    50% {
+        margin-left: 500px;
+        margin-bottom: -300px;
+
+    }
+
+    100% {
+        margin-left: 100px;
+        margin-top: 0;
+
+    }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid forestgreen;
+    opacity: $opacity;
+}
+
+.triangle {
+    -webkit-animation: mymove 5s infinite alternate;
+}
+

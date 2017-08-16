@@ -1,0 +1,81 @@
+@keyframes xAxis {
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateX(150px) rotate(50deg);
+
+    }
+
+    100% {
+        animation-timing-function: ease-in;
+        transform: translateX(300px) rotate(200deg);
+    }
+
+    150% {
+        animation-timing-function: ease-in;
+        transform: translateX(600px) rotate(150deg);
+    }
+
+    250% {
+        animation-timing-function: ease-in;
+        transform: translateX(600px) rotate(200deg);
+    }
+
+    300% {
+        animation-timing-function: ease-in;
+        transform: translateX(300px) rotate(350deg);
+    }
+
+    350% {
+        animation-timing-function: ease-in;
+        transform: translateX(150px) rotate(400deg);
+    }
+}
+
+@keyframes yAxis {
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateY(-150px) rotate(50deg);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(-300px) rotate(200deg);
+    }
+
+    150% {
+        animation-timing-function: ease-in;
+        transform: translateX(-600px) rotate(150deg);
+    }
+
+    250% {
+        animation-timing-function: ease-in;
+        transform: translateX(-600px) rotate(200deg);
+    }
+
+    300% {
+        animation-timing-function: ease-in;
+        transform: translateX(-300px) rotate(350deg);
+    }
+
+    350% {
+        animation-timing-function: ease-in;
+        transform: translateX(-150px) rotate(400deg);
+    }
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: lightskyblue;
+    opacity: $opacity;
+}
+
+.rectangle {
+    -webkit-animation: xAxis 2.5s infinite ease-in;
+    -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+.rectangle::after {
+    -webkit-animation: yAxis 2.5s infinite ease-out;
+    -webkit-animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}

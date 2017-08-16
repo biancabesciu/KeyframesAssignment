@@ -1,0 +1,134 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@keyframes color-me-in {
+    0% {
+        background: orange;
+        margin-top: 0;
+        margin-right:0;
+
+    }
+
+    25% {
+        background: blue;
+        margin-top: 50px;
+        margin-right:200px;
+    }
+
+    75% {
+        background: indianred;
+        margin-top: 100px;
+        margin-right:850px;
+    }
+
+    100% {
+        background: black;
+        margin-top: 150px;
+        margin-right:1700px;
+    }
+
+    150% {
+        background: black;
+        margin-top: 50px;
+        margin-right:200px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        margin-top: 0;
+        margin-left:0;
+        transform: scale(1, 1);
+
+    }
+
+    25% {
+        margin-top: 50px;
+        margin-left:200px;
+        transform: scale(0.5, 2);
+    }
+
+    75% {
+        margin-top: 100px;
+        margin-left:850px;
+        transform: scale(1.5, 2);
+    }
+
+    100% {
+        margin-top: 150px;
+        margin-left:1700px;
+        transform: scale(1.8, 2);
+    }
+
+    150% {
+        margin-top: 50px;
+        margin-left:200px;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        margin-top: 0;
+        margin-left: 200px;
+
+    }
+
+    25% {
+        margin-top: -250px;
+        margin-left: 400px;
+    }
+
+    50% {
+        margin-top: -250px;
+        margin-left: 800px;
+
+    }
+
+    100% {
+        margin-top: 0;
+        margin-left: 200px;
+    }
+}
+
+.circle {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background: navajowhite;
+    opacity: $opacity;
+    @include border-radius(50%);
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    opacity: $opacity;
+    @include border-radius(75%);
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    background: mediumslateblue;
+    opacity: $opacity;
+    @include border-radius(100%);
+}
+
+.circle {
+    -webkit-animation: color-me-in ease-in 5s infinite;
+}
+
+.circle2 {
+    -webkit-animation: jump 5s infinite alternate;
+}
+
+.circle3 {
+    -webkit-animation: slideUp 5s infinite alternate;
+}

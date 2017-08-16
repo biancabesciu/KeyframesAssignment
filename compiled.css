@@ -45,15 +45,15 @@
 @keyframes slideUp {
   0% {
     margin-top: 0;
+    margin-bottom: 100px;
     margin-left: 200px; }
-  25% {
-    margin-top: -250px;
-    margin-left: 400px; }
   50% {
-    margin-top: -250px;
-    margin-left: 800px; }
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: 400px; }
   100% {
     margin-top: 0;
+    margin-bottom: 100px;
     margin-left: 200px; } }
 
 .circle {
@@ -97,7 +97,7 @@
   -webkit-animation: jump 5s infinite alternate; }
 
 .circle3 {
-  -webkit-animation: slideUp 5s infinite alternate; }
+  -webkit-animation: slideUp 5s infinite alternate-reverse; }
 
 @keyframes xAxis {
   50% {

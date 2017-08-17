@@ -72,25 +72,20 @@
     }
 }
 
-@keyframes slideUp {
+@keyframes moveCircle {
     0% {
-        margin-top: 0;
-        margin-bottom: 100px;
+        top: 20px;
         margin-left: 200px;
-
+        animation-timing-function: ease-out;
     }
-
     50% {
-        margin-top: 50px;
-        margin-bottom: 200px;
-        margin-left: 400px;
-
+        top:20px;
+        margin-left:800px;
+        animation-timing-function: ease-in;
     }
-
     100% {
-        margin-top: 0;
-        margin-bottom: 100px;
-        margin-left: 200px;
+        top:20px;
+        margin-left:200px;
     }
 }
 
@@ -112,6 +107,7 @@
 }
 
 .circle3 {
+    float: right;
     width: 200px;
     height: 200px;
     background: mediumslateblue;
@@ -128,5 +124,5 @@
 }
 
 .circle3 {
-    -webkit-animation: slideUp 5s infinite alternate-reverse;
+    -webkit-animation: moveCircle 3s infinite alternate-reverse;
 }

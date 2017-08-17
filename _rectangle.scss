@@ -1,65 +1,65 @@
 @keyframes xAxis {
     50% {
         animation-timing-function: ease-in;
-        transform: translateX(150px) rotate(50deg);
+        transform: translateX(200px) rotate(50deg);
 
     }
 
     100% {
         animation-timing-function: ease-in;
-        transform: translateX(300px) rotate(200deg);
+        transform: translateX(500px) rotate(200deg);
     }
 
     150% {
         animation-timing-function: ease-in;
-        transform: translateX(600px) rotate(150deg);
+        transform: translateX(800px) rotate(150deg);
     }
 
     250% {
         animation-timing-function: ease-in;
-        transform: translateX(600px) rotate(200deg);
+        transform: translateX(800px) rotate(200deg);
     }
 
     300% {
         animation-timing-function: ease-in;
-        transform: translateX(300px) rotate(350deg);
+        transform: translateX(500px) rotate(350deg);
     }
 
     350% {
         animation-timing-function: ease-in;
-        transform: translateX(150px) rotate(400deg);
+        transform: translateX(200px) rotate(400deg);
     }
 }
 
 @keyframes yAxis {
     50% {
         animation-timing-function: ease-out;
-        transform: translateY(-150px) rotate(50deg);
+        transform: translateY(-200px) rotate(50deg);
     }
 
     100% {
         animation-timing-function: ease-out;
-        transform: translateY(-300px) rotate(200deg);
+        transform: translateY(-400px) rotate(200deg);
     }
 
     150% {
         animation-timing-function: ease-in;
-        transform: translateX(-600px) rotate(150deg);
+        transform: translateX(-800px) rotate(150deg);
     }
 
     250% {
         animation-timing-function: ease-in;
-        transform: translateX(-600px) rotate(200deg);
+        transform: translateX(-800px) rotate(200deg);
     }
 
     300% {
         animation-timing-function: ease-in;
-        transform: translateX(-300px) rotate(350deg);
+        transform: translateX(-400px) rotate(350deg);
     }
 
     350% {
         animation-timing-function: ease-in;
-        transform: translateX(-150px) rotate(400deg);
+        transform: translateX(-200px) rotate(400deg);
     }
 }
 

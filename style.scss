@@ -36,7 +36,7 @@ body {
     }
 }
 
-@keyframes slide {
+@keyframes slideSquare {
     0% {
         top: 50px;
         margin-left: 200px;
@@ -91,7 +91,7 @@ body {
 }
 
 .square2 {
-    -webkit-animation-name: slide;
+    -webkit-animation-name: slideSquare;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
 }

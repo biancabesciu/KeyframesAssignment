@@ -42,18 +42,17 @@
     margin-left: 200px;
     transform: scale(1, 1); } }
 
-@keyframes slideUp {
+@keyframes moveCircle {
   0% {
-    margin-top: 0;
-    margin-bottom: 100px;
-    margin-left: 200px; }
+    top: 20px;
+    margin-left: 200px;
+    animation-timing-function: ease-out; }
   50% {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    margin-left: 400px; }
+    top: 20px;
+    margin-left: 800px;
+    animation-timing-function: ease-in; }
   100% {
-    margin-top: 0;
-    margin-bottom: 100px;
+    top: 20px;
     margin-left: 200px; } }
 
 .circle {
@@ -80,6 +79,7 @@
   border-radius: 75%; }
 
 .circle3 {
+  float: right;
   width: 200px;
   height: 200px;
   background: mediumslateblue;
@@ -97,47 +97,47 @@
   -webkit-animation: jump 5s infinite alternate; }
 
 .circle3 {
-  -webkit-animation: slideUp 5s infinite alternate-reverse; }
+  -webkit-animation: moveCircle 3s infinite alternate-reverse; }
 
 @keyframes xAxis {
   50% {
     animation-timing-function: ease-in;
-    transform: translateX(150px) rotate(50deg); }
+    transform: translateX(200px) rotate(50deg); }
   100% {
     animation-timing-function: ease-in;
-    transform: translateX(300px) rotate(200deg); }
+    transform: translateX(500px) rotate(200deg); }
   150% {
     animation-timing-function: ease-in;
-    transform: translateX(600px) rotate(150deg); }
+    transform: translateX(800px) rotate(150deg); }
   250% {
     animation-timing-function: ease-in;
-    transform: translateX(600px) rotate(200deg); }
+    transform: translateX(800px) rotate(200deg); }
   300% {
     animation-timing-function: ease-in;
-    transform: translateX(300px) rotate(350deg); }
+    transform: translateX(500px) rotate(350deg); }
   350% {
     animation-timing-function: ease-in;
-    transform: translateX(150px) rotate(400deg); } }
+    transform: translateX(200px) rotate(400deg); } }
 
 @keyframes yAxis {
   50% {
     animation-timing-function: ease-out;
-    transform: translateY(-150px) rotate(50deg); }
+    transform: translateY(-200px) rotate(50deg); }
   100% {
     animation-timing-function: ease-out;
-    transform: translateY(-300px) rotate(200deg); }
+    transform: translateY(-400px) rotate(200deg); }
   150% {
     animation-timing-function: ease-in;
-    transform: translateX(-600px) rotate(150deg); }
+    transform: translateX(-800px) rotate(150deg); }
   250% {
     animation-timing-function: ease-in;
-    transform: translateX(-600px) rotate(200deg); }
+    transform: translateX(-800px) rotate(200deg); }
   300% {
     animation-timing-function: ease-in;
-    transform: translateX(-300px) rotate(350deg); }
+    transform: translateX(-400px) rotate(350deg); }
   350% {
     animation-timing-function: ease-in;
-    transform: translateX(-150px) rotate(400deg); } }
+    transform: translateX(-200px) rotate(400deg); } }
 
 .rectangle {
   width: 200px;
@@ -155,16 +155,16 @@
 
 @keyframes mymove {
   0% {
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 0; }
   25% {
-    margin-left: 250px;
+    margin-left: 400px;
     margin-top: -300px; }
   50% {
-    margin-left: 500px;
+    margin-left: 800px;
     margin-bottom: -300px; }
   100% {
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 0; } }
 
 .triangle {
@@ -200,7 +200,7 @@ body {
     margin-top: 500px;
     transform: rotate(160deg) scale(2, 2); } }
 
-@keyframes slide {
+@keyframes slideSquare {
   0% {
     top: 50px;
     margin-left: 200px;
@@ -246,6 +246,6 @@ body {
   -webkit-animation-play-state: running; }
 
 .square2 {
-  -webkit-animation-name: slide;
+  -webkit-animation-name: slideSquare;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite; }
